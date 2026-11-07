@@ -28,6 +28,10 @@ jobs:
           touch _site/.nojekyll
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          # Creates the Pages site on first run instead of failing when the
+          # repository has never had Pages enabled.
+          enablement: true
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
