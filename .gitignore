@@ -1,2 +1,5 @@
 _site/
 .DS_Store
+
+# scratch: raw AI renders before cropping
+assets/catalog/_raw/
